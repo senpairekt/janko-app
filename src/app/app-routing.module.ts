@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { ErrorComponent } from './error/error.component';
+import { ProductsComponent } from './products/products.component';
 
 
 
@@ -16,7 +17,7 @@ import { ErrorComponent } from './error/error.component';
 
 
 
-     //  { path: 'products', component: Products }
+      { path: 'products', component: ProductsComponent },
     
     
      //err

@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  pageTitle = 'Janko-App';
+  public pageTitle = 'Janko-App';
 
 constructor() {}
 
