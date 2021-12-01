@@ -24,7 +24,7 @@
   
       <div class="table-responsive">
         <table class="table mb-0"
-               >
+             *ngIf="products$ | async as products"  >
           <thead>
             <tr>
               <th>Product</th>
@@ -33,20 +33,15 @@
               <th>Price</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody *ngFor = "let product of products">
             <tr>
-              <td> product.productName </td>
-              <td> product.productCode </td>
-              <td> product.category </td>
-              <td> product.price</td>
+              <td>{{ product.productName }}</td>
+              <td> {{ product.productCode }}</td>
+              <td> {{ product.category }}</td>
+              <td> {{product.price}}</td>
             </tr>
           </tbody>
         </table>
       </div>
-  
     </div>
-  </div>
-  
-  <div class="alert alert-danger">
-
   </div>
